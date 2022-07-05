@@ -13,7 +13,7 @@ from capstone_etl import run_capstone_etl
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': '',
+    'start_date': airflow.utils.dates.days_ago(0),
     'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,

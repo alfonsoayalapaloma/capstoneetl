@@ -1,5 +1,7 @@
 from datetime import timedelta
 from airflow import DAG
+import airflow
+
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
